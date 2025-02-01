@@ -5,7 +5,7 @@ interface ApplicationLayoutProps {
   children: React.ReactNode;
 }
 
-export default function ApplicationLayout({
+export default async function ApplicationLayout({
   children,
 }: ApplicationLayoutProps) {
   return (
@@ -13,7 +13,6 @@ export default function ApplicationLayout({
       <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6 fixed top-0 left-0 w-full z-50">
         <div className="flex justify-end w-full gap-4">
           <ThemeButton />
-          {/* <UserButton v-if="authStore.isAuthenticated" /> */}
         </div>
       </header>
       <main className="flex flex-1 flex-col justify-center items-center w-full pt-14 lg:pt-[60px] pb-14 lg:pb-[60px]">
